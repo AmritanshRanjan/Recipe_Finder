@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR CHEF</title>
+    <!-- Giving title -->
+    <link rel="stylesheet" href="style.css">
+    <!-- connecting css file to the html -->
+</head>
+<body>
+    <header><h2><i>What's in Your Kitchen? Find Recipes Now!</i></h2></header>
+    
+    <!-- assigning a header -->
+    <div class="All">
+    <main>
+        <div class="ingredients">
+        <h3><i>Select Your Ingredients:</i></h3>  
+        <!-- creating labels to make checkbox to choose the ingredients   -->
+            <label><input type="checkbox" id="Rice" value="Rice"> Rice</label>
+            <label><input type="checkbox" id="Jeera" value="Jeera"> Jeera</label>
+            <label><input type="checkbox" id="Butter" value="Butter"> Butter</label>
+            <label><input type="checkbox" id="Garlic" value="Garlic"> Garlic</label>
+            <label><input type="checkbox" id="Tomato" value="Tomato"> Tomato</label>
+            <label><input type="checkbox" id="Onion" value="Onion"> Onion</label>
+            <label><input type="checkbox" id="Paneer" value="Paneer"> Paneer</label>
+            <label><input type="checkbox" id="Pepper" value="Pepper"> Pepper</label>
+            <label><input type="checkbox" id="Cheese" value="Cheese"> Cheese</label>
+            <label><input type="checkbox" id="WheatBread" value="WheatBread"> Wheat</label>
+        </div>
+    </div>
+        <br>
+        <div class="containerOne">
+            <button id="finder">Find The Recipe</button>
+            <!-- finder button -->
+        </div>
+        <br>
+        <br>
+        <!-- creating a Favourite  menu -->
+        <div class="Favourite">
+            <button id="checkFav"><i>Click To Check Your Favourites</i></button>
+                <h3 id="para"><b>List Of Your Favourite Recipe</b></h3>
+                <ul class="savedList"></ul>
+        </div>
+            <br>
+        
+            <div class="saved">
+        </div>
+         <!-- creating a recipeSection -->
+        <div class="recipeSection">
+            <h2 id="Reco"><i>Recommendation</i></h2>
+            <div class="recipiesName"></div>
+        </div>
+        <br>
+        <br>
+        <form id="addRecipeForm">
+            <h2>Why Don't You Give Us Your Wonderful Recipe!!</h2>
+            <!-- using placeholders to get the input in the form -->
+            <input type="text" id="recipeName" placeholder="Recipe Name" required>
+            <br>
+            <input type="text" id="recipeIngredients" placeholder="Ingredients (comma separated)" required>
+            <br>
+            <input type="text" id="recipeImage" placeholder="Image URL">
+            <br>
+            <textarea id="recipeProcedure" placeholder="Procedure" required></textarea>
+            <br>
+            <input type="text" id="recipeCuisine" placeholder="Cuisine">
+            <br>
+            <input type="text" id="recipePrepTime" placeholder="Preparation Time">
+            <br>
+            <input type="text" id="recipeDietaryRestrictions" placeholder="Dietary Restrictions (comma separated)">
+            <br>
+            <button type="submit">Sumbit The Recipe</button>
+            <!-- using sumbit button to add it into local storage -->
+        </form>
+        <br>
+        <br>
+        <button id="buttons">Clear The Saved Changes </button>
+        <!-- clears all of the addition done by user .. it removes favourites and added recipe -->
+    <br>
+    <script src="script.js"></script>
+    <!-- adding script file to html -->
+</body>
+</html>

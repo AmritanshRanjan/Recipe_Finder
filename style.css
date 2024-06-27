@@ -1,0 +1,177 @@
+/* All the colors are taken from coolors.com */
+/* style of header */
+body{
+    background-color: #495057;
+    background-image: url(https://i.pinimg.com/736x/bd/f9/ba/bdf9baebfce79f6c83dc8e259a3484f3.jpg);
+    background-size: cover;
+}
+header{
+    font-size: 25px;
+    text-align: center;
+    color: #dda15e;
+    background-color: #333;
+    background-image: url(https://i.pinimg.com/736x/bd/f9/ba/bdf9baebfce79f6c83dc8e259a3484f3.jpg);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+/* style of checkboxes */
+.ingredients{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    font-size: 20px;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 5px solid rgb(56, 140, 243);
+    margin: auto;
+    background-image:url(https://media.istockphoto.com/id/924476838/photo/delicious-pizza-with-ingredients-and-spices.jpg?s=612x612&w=0&k=20&c=dlj4HvyVhTavzIHyDf7fRVeXB_XDVzhlcdFx7uNi0Gw=);
+    background-size: cover;
+    color: rgb(235, 206, 159);
+}
+/* style of find the recipe button */
+#finder{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+/* style of favourite section */
+.Favourite{
+    display: flex;
+    justify-content: center;
+    background-color: #edede9;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    color: #adb5bd;
+}
+/*  style of favourite button */
+#checkFav{
+    display: block;
+    width: auto;
+    padding: 10px;
+    background-color: #6c757d;
+    border: none;
+    color: #e9ecef;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+/* style of the text "list of your favourite recipe" */
+#para{
+    text-align: center;
+    text-decoration: underline;
+    /* color: ; */
+}
+/* recipe added in favourite */
+.savedList{
+    text-shadow: #dda15e;
+}
+/* div containg recipe and its information */
+.recipeSection{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+}
+/* Recommendation text */
+#Reco{
+    color: #778da9;
+    background-color: #dde5b6;
+    text-align: center;
+    border: none solid black;
+    border-radius: 4px;
+}
+/* This is the div created in js for recipe name,procedure and ...... */
+.recipe {
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #051923;
+    background-color: #e9edc9;
+}
+/* to give shape to images of the recipe */
+.recipe img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+/* form of adding recipe by user */
+#addRecipeForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffe5d9;
+    border-radius: 10px;
+    box-shadow: #28a745;
+    padding: 20px;
+    border: 5px solid;
+}
+
+#buttons{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c9613f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+}
+/* Giving hover to all of the three buttons on webpage */
+.buttons:hover {
+    background-color: #b15236;
+}
+#addRecipeForm button:hover {
+    background-color: #218838;
+}
+#checkFav:hover {
+    background-color: #e09e4b;
+}
+
+/* using input textarea and button attribute of placeholder */
+#addRecipeForm input,
+#addRecipeForm textarea,
+#addRecipeForm button {
+    width: 100%;
+    max-width: 570px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+/* styling the sumbit button */
+#addRecipeForm button {
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
